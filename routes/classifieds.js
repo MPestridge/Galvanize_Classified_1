@@ -4,7 +4,6 @@
 const express = require('express');
 const knex = require('../knex');
 const router = express.Router();
-const { camelizeKeys, decamelizeKeys } = require('humps');
 
 router.get('/', (req, res, next) => {
   knex('classifieds')
